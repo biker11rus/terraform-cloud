@@ -38,7 +38,7 @@ resource "yandex_compute_instance" "vm-1" {
     subnet_id = module.vpc.subnet_ids[0]
     nat       = true
   }
-  metadata = {
-    ssh-keys = "rkhozyainov:${file("~/.ssh/id_rsa.pub")}"
-  }
+  #metadata = {
+  #  ssh-keys = "rkhozyainov:${file("~/.ssh/id_rsa.pub")}"
+  #}
 }
